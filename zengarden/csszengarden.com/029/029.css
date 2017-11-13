@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	background: #fff url(main_bg.gif) repeat-x top left;
+}
+
+.page-wrapper {
+	width: 770px;
+	margin: 0;
+	padding: 0;
+	background: url(quicksum_bg.gif) no-repeat;
+	margin-top: 28px;
+}
+
+.intro {
+	width: 770px;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin: 0;
+	padding: 0;
+	width: 770px;
+	height: 72px;
+	margin-bottom: 22px;
+}
+
+header h1 {
+	background: transparent url(intro_bg.jpg) no-repeat;
+	margin-top: 0;
+	width: 403px;
+	height: 72px;
+	float: left;
+}
+
+header h2 {
+	background: transparent url(intro_bg2.jpg) no-repeat;
+	margin: 0;
+	width: 367px;
+	height: 72px;
+	float: left;
+}
+
+header h1, header h2 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+}
+
+.summary {
+	width: 180px;
+	padding: 10px;
+	float: left;
+	clear: both;
+	border-top: 1px dashed #999;
+	margin-top: -1.8em;
+	font-size: 11px;
+	line-height: 30px;
+}
+
+.summary p:first-child:first-letter {
+	padding-right: 5px;
+	font-size: 3em;
+	color: #811610;
+}
+
+.summary p:nth-child(2):first-letter {
+	padding-right: 5px;
+	font-size: 3em;
+	color: #811610;
+}
+
+.preamble {
+	width: 180px;
+	padding: 0 10px;
+	line-height: 30px;
+	font-size: 11px;
+}
+
+.preamble h3 {
+	border-top: 1px solid #811610;
+	border-bottom: 1px solid #811610;
+	line-height: 16px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.supporting {
+	position: absolute;
+	top: 0;
+	margin-left: 200px;
+	width: 344px;
+	padding: 0 10px;
+	border: 1px;
+	background: #f7f7f2;
+	top: 100px;
+	border: 1px solid #999;
+	height: auto;
+	font-size: 13px;
+}
+
+.supporting h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.supporting h3, .participation h3, .benefits h3, .requirements h3 {
+	margin-bottom: 10px;
+	width: 300px;
+	height: 15px;
+	border-bottom: 1px dashed #999;
+}
+
+.supporting h3 {
+	background: transparent url(sup_h3_a.gif) no-repeat;
+}
+
+.participation h3 {
+	background: transparent url(sup_h3_b.gif) no-repeat;
+}
+
+.benefits h3 {
+	background: transparent url(sup_h3_c.gif) no-repeat;
+}
+
+.requirements h3 {
+	background: transparent url(sup_h3_d.gif) no-repeat;
+}
+
+.sidebar {
+	position: absolute;
+	top: 0;
+	left: 566px;
+}
