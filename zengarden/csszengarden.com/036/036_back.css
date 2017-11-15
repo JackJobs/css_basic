@@ -1,54 +1,74 @@
+/* css Zen Garden submission 036 - 'White Lily' by Jens Kristensen, http://j-k.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jens Kristensen */
+
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+
 /* basic elements */
-/*----------------------------------------*/
+/*---------------------------------------------------*/
 
 body, html, div {
 	margin: 0;
 	padding: 0;
 }
 
-body {
+
+body { 
 	font: 8pt/16pt verdana, geneva, arial, sans serif; 
-	color: #000;
+	color: #000; 
 	background: #fff url(lbg.gif) repeat-y;
+
 }
 
 /* specific divs */
 
 /* container keeps it all together */
-/*------------------------------------------*/
+/*---------------------------------------------------*/
 
-.page-wrapper {
-	width: 760px;
-	border-top: 1px solid #230;
+.page-wrapper{
+	border-top:1px solid #230;
 	border-right: 1px solid #230;
-	margin: 0;
-	padding: 0;
+	width:760px;
+	margin: 0px; 
+	padding: 0px; 
 	background: transparent url(topbg.gif) repeat-x;
+
 }
 
 /* intro div and its content */
-/*-------------------------------------------*/
+/*---------------------------------------------------*/
 
-.intro {
-	width: 760px;
-	margin-top: 20px;
+.intro { 
+	margin:0;
+	padding:0;
+	margin-top:20px;
+	width:760px;
 	background: transparent url(lsh.gif) no-repeat 687px 231px;
-	margin: 0;
-	padding: 0;
 }
 
-header {
-	position: absolute;
-	left: 0;
-	width: 355px;
-	height: 201px;
-}
+header { 
+	position:absolute;
+	left:0;
+	width: 355px; 
+	height:201px
 
-header h1 {
-	background: transparent url(centerpiece.jpg) no-repeat;
-	margin-top: 0;
-	width: 355px;
-	height: 201px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+header h1 { 
+	background: transparent url(centerpiece.jpg) no-repeat; 
+	margin-top: 0px;
+	width: 355px; 
+	height: 201px; 
 	float: left;
 
 	text-indent: 100%;
@@ -57,18 +77,16 @@ header h1 {
 }
 
 header h2 {
-	display: none;
+	display:none;
 }
 
-
-
-.summary {
-	margin: 20px 0 0 355px;
-	width: 322px;
+.summary{
+	margin: 0 0 0 355px;
+	width:332px;
 	height: 200px;
-	background: #abbc47 url(quicksumbg.gif);
-	border-right: 1px solid #abbc47;
-	border-top: 1px solid #abbc47;
+	background: #ABBC47 url(quicksumbg.gif);
+	border-right:1px solid #ABBC47;
+	border-top:1px solid #ABBC47;
 }
 
 .summary p:first-child {
@@ -86,40 +104,42 @@ header h2 {
 	margin:0 30px;
 }
 
-.summary p:first-child {
-	margin-top: 0;
+/* visually footer is moved up to be with the intro stuff */
+
+footer{
+	position:absolute;
+	left:0;
+	top:230px;
+	font: 10px verdana, arial, sans serif; 
+	color:#fff;
+	margin:0 30px 0 400px;
+	width:340px;
+	text-align:right;
 }
 
-.summary a {
-	color: #fff;
+.summary p:last-child a, footer a{
+	color:#fff;
 }
 
-
-
-footer {
-	position: absolute;
-	left: 0;
-	top: 230px;
-	color: #fff;
-	font: 10px verdana, arial, sans serif;
-	margin: 0 30px 0 400px;
-	width: 340px;
-	text-align: right;
+.summary p:last-child a:hover, footer a:hover{
+	color:#230;
+	background-color:#fff;
+	text-decoration:none;
 }
 
-footer a {
-	color: #fff;
-}
+/* visually we now move into the main area of the page
+/*---------------------------------------------------*/
 
-.preamble {
-	padding: 50px 30px 30px 30px;
-	margin: 30px 0 0 355px;
-	border-width: 0 0 1px 1px;
-	border-style: solid;
-	border-color: #fff #ddd;
-	text-align: left;
-	width: 343px;
+.preamble{
+	padding:50px 30px 30px 30px;
+	margin:30px 0 0 355px;
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	text-align:left;
 	background: transparent url(endsection.gif) no-repeat bottom center;
+
+	width:343px;
 }
 
 .preamble p, .explanation p, .benefits p, .participation p, .requirements p{
@@ -141,33 +161,42 @@ footer a {
 	width: 270px;
 }
 
-.supporting {
-	margin: 0 0 0 355px;
-	padding: 50px 0 30px 0;
-	width: 343px;
-	border-width: 0 0 1px 1px;
-	border-style: solid;
-	border-color: #fff #ddd;
+
+.supporting{
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	margin:0px 0px 0px 355px;
+	padding:50px 30px 0 30px;
+	width:405px;	
 	voice-family: "\"}\"";   
 	voice-family: inherit;
+	width:343px;
+	
+
 }
 
-
 .explanation, .benefits, .participation, .requirements {
-	padding: 0 0 20px 30px;
-	margin-bottom: 20px;
-	text-align: left;
+	padding:0 0 20px 0;
+	margin-bottom:20px;
+	text-align:left;
 	background: transparent url(endsection.gif) no-repeat bottom center;
 }
 
-p {
-	padding: 0 8px;
+p{
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
-p:nth-child(2) {
-	margin-top: 26px;
+p:nth-child(2){
+	margin-top:26px;
 }
 
+.summary p:first-child{
+	margin-top:0;
+}
+
+/* use images to display headers */
 
 .explanation h3{
 	background: transparent url(h3explanation.gif) no-repeat bottom left; 
@@ -193,22 +222,27 @@ p:nth-child(2) {
 	overflow: hidden;
 }
 
-.sidebar {
-	position: absolute;
-	left: 0;
-	top: 252px;
-	padding: 50px 30px 0 130px;
-	width: 195px;
+/* and finally we place the list of links */
+/*---------------------------------------------------*/
+
+.sidebar{
+	position:absolute;
+	left:0px;
+	top:252px;
+	width:355px;
+	padding:50px 30px 0 130px;
 	background: transparent url(lsh.gif) no-repeat top left;
 	voice-family: "\"}\"";   
 	voice-family: inherit;
+	width:195px;
 }
 
-.sidebar .wrapper {
+.sidebar .wrapper{
 	padding: 0;
 	overflow: hidden;
 }
 
+/* use images for headers */
 
 h3.select{
 	background: transparent url(h3select.gif) no-repeat bottom left; 
@@ -231,7 +265,9 @@ h3.select, h3.archives, h3.resources {
 	overflow: hidden;
 }
 
+/* put some style on the lists */
 
+/* first the list of designs */
 .design-selection ul {
 	margin: 10px 0 0 0;
 	padding: 10px;
@@ -279,8 +315,11 @@ h3.select, h3.archives, h3.resources {
 	background: transparent url(bullet2.gif) no-repeat 2px 7px;
 }
 
+/* some generic stuff */
+/*---------------------------------------------------*/
+
 a {
-	color:#320;
+	color:#230;
 }
 
 a:visited {
@@ -291,6 +330,9 @@ a:hover {
 	color:#ABBC47;
 }
 
+/* and finally we use one of the extra divs available */
+/*---------------------------------------------------*/
+
 .extra1{
 	width:3px;
 	height:18px;
@@ -299,3 +341,4 @@ a:hover {
 	top:252px;
 	background: transparent url(ltop.gif) no-repeat;
 }
+
